@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <h1>Encriptador</h1>
+    <p>Ingresa el texto que deseas encriptar o desencriptar:</p>
+    <textarea id="input" rows="5" cols="50"></textarea><br /><br />
+    <input type="radio" id="encrypt" name="mode" value="encrypt" checked />
+    <label for="encrypt">Encriptar</label><br />
+    <input type="radio" id="decrypt" name="mode" value="decrypt" />
+    <label for="decrypt">Desencriptar</label><br /><br />
+    <button onclick="process()">Procesar</button>
+    <button onclick="copy()">Copiar resultado</button><br /><br />
+    <p>Resultado:</p>
+    <textarea id="output" rows="5" cols="50"></textarea>
+
+    <script src="encriptador.js"></script>
+  </body>
+</html>
